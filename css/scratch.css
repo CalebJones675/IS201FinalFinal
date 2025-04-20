@@ -1,0 +1,208 @@
+/* Base Styles */
+body {
+    background-color: #f3f3f3;
+    font-family: 'Georgia', serif;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #c0a062;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/assets/img/brandingphoto.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    border-bottom: 4px solid #ddd;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Image Gallery */
+#gallery {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.featured-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-img {
+        max-width: 95%;
+    }
+}
+
+/* Lists */
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 60px auto; /* Add top and bottom margin for vertical spacing and center horizontally */
+    text-align: center; /* Center inline(-block) elements within the section */
+}
+
+/* Lists */
+ul, ol {
+    display: inline-block; /* Make lists behave like inline blocks to be centered by text-align */
+    margin: 0; /* Reset default margins */
+    padding-left: 0;
+    text-align: left; /* Align text within list items to the left */
+}
+
+/* Ordered List and Unordered List Nesting */
+ol {
+    margin-bottom: 20px; /* Add margin below the ordered list */
+}
+
+ol li {
+    position: relative;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+ol li ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #2e2e2e;
+    text-align: left;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+ol li ul li {
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+ol li ul li:hover {
+    background-color: transparent;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid #f5f5f5;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.back-to-top:hover {
+    background-color: #f5f5f5;
+    color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Add space between text and video */
+.video-text {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 30px;
+    font-size: 0.95rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+}
